@@ -2,43 +2,43 @@
 @charset "utf-8";
 
 @font-face {
-	font-family: "lobstertwo regular"
+	font-family: "lobstertwo regular";
 	src: url(fuentes/LobsterTwo-Regular.ttf) format(truetype);
 	font-weigth: normal;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: "lobstertwo italic"
-	src: url(fuentes/lobstertwo-italic.ttf) format(truetype)
+	font-family: "lobstertwo italic";
+	src: url(fuentes/lobstertwo-italic.ttf) format(truetype);
 	font-weigth: italic;
 	font-style: italic;
 }
 
 @font-face {
-    font-family: "lobstertwo bold"
-    src: url(fuentes/lobstertwo-bold.ttf) format(truetype)
+    font-family: "lobstertwo bold";
+    src: url(fuentes/lobstertwo-bold.ttf) format(truetype);
     font-weigth: bold;
     font-style: normal;
 }
 
 @font-face {
-	font-family: "estedad regular"
-	src: url(fuentes/Estedad-Regular.ttf) format(truetype)
+	font-family: "estedad regular";
+	src: url(fuentes/Estedad-Regular.ttf) format(truetype);
 	font-weigth: normal;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: "estedad medium"
-	src: url(fuentes/Estedad-Medium.ttf) format(truetype)
+	font-family: "estedad medium";
+	src: url(fuentes/Estedad-Medium.ttf) format(truetype);
 	font-weight: medium;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: "estedad semibold"
-	src: url(fuentes/Estedad-SemiBold.ttf) format(truetype)
+	font-family: "estedad semibold";
+	src: url(fuentes/Estedad-SemiBold.ttf) format(truetype);
 	font-weigth: semibold;
 	font-style: normal; 
 }
@@ -81,13 +81,13 @@ font-size: 145rem;
 }
 
 h2 {
-	font-family: lobstertwo regular
-	font-size: 80rem
+	font-family: "lobstertwo regular";
+	font-size: 80rem;
 	color: var(--marron);
 }
 
 h3 {
-font-family:  lobstertwo regular;
+font-family: "lobstertwo regular";
 font-size: 55rem; 
 text-align: center; 
 line-height: 52px; 
