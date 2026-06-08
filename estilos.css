@@ -228,3 +228,31 @@ footer {
     grid-column: 1 / span 1;
     justify-self: stretch;
 }
+
+/* css de Sobre Mí */
+
+.presentacion {
+    text-align: center;
+}
+
+.galeria-sobremi img {
+    border-radius: 29px;
+}
+
+.galeria-sobremi {
+    display: flex;
+    height: 514px;
+    padding: 45px 0 22px 0;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 108px;
+    align-self: stretch;
+}
+
+summary{
+    color: var(--blanco);
+    font-family: 'estedad medium', sans-serif;
+    font-size: 2.1875rem;
+    font-weight: 500px;
+    line-height: 5rem;
+}
