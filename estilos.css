@@ -393,7 +393,7 @@ p {
     width: 1920px;
     height: 1087px;
     padding: 88px 90px;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     gap: 90px;
 }
