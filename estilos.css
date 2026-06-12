@@ -469,3 +469,128 @@ summary {
     font-weight: 500px;
     line-height: 5rem;
 }
+
+/*comienzo css recetario*/
+.receta{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 90px;
+    gap: 40px;
+}
+
+.titular{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.categorias{
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.contenido-receta{
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+
+.columna-izquierda img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.datos-receta{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--color-primario);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.contenido{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.contenido img{
+    width: 42px;
+    height: 42px;
+}
+
+.contenido p{
+    color: var(--color-blanco);
+}
+
+.notas{
+    width: 350px;
+    background-color: var(--color-primario);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.notas p{
+    color: var(--color-blanco);
+}
+
+.ingredientes{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.ingredientes-nombre,
+.ingredientes-cantidad{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pasos{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.pasos li{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.pasos h6{
+    color: var(--color-marron);
+}
+
+.pasos h2{
+    font-size: 2rem;
+}
+
+.cierre-notas{
+    text-align: center;
+}
+
+.columna-izquierda{
+    display:flex;
+    flex-direction:column;
+}
+
+.categorias{
+    margin-bottom:40px;
+}
+
+.categorias a{
+    color:white;
+}
+
+.categorias ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #A2B058;
+    padding: 20px;
+    border-radius: 20px 20px 0 0;
+}
+
+
