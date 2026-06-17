@@ -82,7 +82,7 @@ h1 {
 
 h2 {
     font-family: "lobstertwo regular";
-    font-size: 4rem;
+    font-size: 2.3rem;
     color: var(--marron);
 }
 
@@ -110,8 +110,8 @@ h5 {
 
 h6 {
     font-family: "estedad semibold", sans-serif;
-    font-size: 1.5rem;
-    line-height: 2rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
     color: var(--color-blanco);
 }
 
@@ -136,9 +136,10 @@ header {
     align-items: center;
     justify-content: center;
     padding: 0 40px;
-    gap: 320px;
+    gap: 150px;
     background-color: var(--color-primario);
 }
+
 
 .buscador {
     background-color: var(--color-blanco);
@@ -150,6 +151,7 @@ header {
     padding: 10px 10px;
 }
 
+
 .botonera {
     display: flex;
     justify-content: flex-end;
@@ -159,6 +161,7 @@ header {
     flex: 1 0 0;
 }
 
+
 .botonera a {
     color: var(--color-blanco);
     text-align: center;
@@ -166,6 +169,7 @@ header {
     line-height: 100%;
     white-space: nowrap;
 }
+
 
 footer {
     display: flex;
@@ -435,7 +439,9 @@ p {
     background-color: var(--color-verde);
     border-radius: 10px;
 }
-#nombre, #email {
+
+#nombre,
+#email {
     width: 100%;
     height: 50px;
     border-radius: 10px;
@@ -559,36 +565,44 @@ summary {
 
 /*comienzo css recetario*/
 .receta{
-    display: flex;
-    flex-direction: column;
-    padding: 40px 90px;
-    gap: 40px;
+    width:100%;
+    max-width:1200px;
+    margin:0 auto;
+    padding:20px 90px 80px;
 }
 
-.titular{
+
+main{
+    width:100%;
+}
+
+.titular {
     display: flex;
     justify-content: center;
-    margin: 40px 0;
 }
 
 .categorias{
-    width: 100%;
-    margin-bottom: 40px;
+    width:100%;
+    padding:0;
+    margin-bottom:40px;
 }
 
-.contenido-receta{
+.contenido-receta {
     display: flex;
-    gap: 20px;
+    justify-content: center;
     align-items: flex-start;
+    gap: 24px;
+    width: 100%;
 }
 
-
-.columna-izquierda img{
+.columna-izquierda img {
     width: 100%;
+    height: auto;
+    display: block;
     border-radius: 10px;
 }
 
-.datos-receta{
+.datos-receta {
     display: flex;
     justify-content: space-around;
     background-color: var(--color-primario);
@@ -596,88 +610,127 @@ summary {
     border-radius: 10px;
 }
 
-.contenido{
+.contenido {
     display: flex;
     align-items: center;
     gap: 10px;
 }
-.contenido img{
+
+.contenido img {
     width: 42px;
     height: 42px;
 }
 
-.contenido p{
+.contenido p {
     color: var(--color-blanco);
 }
 
-.notas{
-    width: 350px;
+.notas {
+    width: 30%;
+    min-width: 220px;
     background-color: var(--color-primario);
     padding: 20px;
     border-radius: 10px;
 }
 
-.notas p{
+.notas p {
     color: var(--color-blanco);
 }
 
-.ingredientes{
+.ingredientes {
     display: flex;
     justify-content: space-between;
     gap: 40px;
 }
 
+.ingredientes p {
+    max-width: none;
+    font-size: 0.9rem;
+}
+
 .ingredientes-nombre,
-.ingredientes-cantidad{
+.ingredientes-cantidad {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
 .pasos{
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    margin-top:50px;
 }
 
 .pasos li{
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
+    display:flex;
+    align-items:flex-start;
+
+    gap:30px;
+
+    padding:8px 0;
 }
 
 .pasos h6{
-    color: var(--color-marron);
+    color:var(--color-marron);
+
+    font-size:1rem;
+
+    line-height:1.6;
+
+    max-width:650px;
 }
 
 .pasos h2{
-    font-size: 2rem;
+    font-size:3rem;
+
+    line-height:1;
+
+    padding:0;
+
+    min-width:40px;
 }
 
-.cierre-notas{
+
+.cierre-notas {
     text-align: center;
+    padding: 40px;
 }
 
-.columna-izquierda{
-    display:flex;
-    flex-direction:column;
+.columna-izquierda {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
 }
 
-.categorias{
-    margin-bottom:40px;
-}
+
 
 .categorias a{
     color:white;
+
+    font-size:1rem;
+
+    white-space:nowrap;
 }
 
 .categorias ul{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #A2B058;
-    padding: 20px;
-    border-radius: 20px 20px 0 0;
+    width:100%;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+
+    background-color:var(--color-verde);
+
+    padding:20px 0;
+
+    margin:0;
 }
 
+.categorias li{
+    flex:1;
+    text-align:center;
+}
 
+h2{
+  padding: 30px;
+}
