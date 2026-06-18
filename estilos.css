@@ -4,28 +4,28 @@
 @font-face {
     font-family: "lobstertwo regular";
     src: url(font/LobsterTwo-Regular.ttf) format(truetype);
-    font-weigth: normal;
+    font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "lobstertwo italic";
     src: url(font/lobstertwo-italic.ttf) format(truetype);
-    font-weigth: italic;
+    font-weight: italic;
     font-style: italic;
 }
 
 @font-face {
     font-family: "lobstertwo bold";
     src: url(font/lobstertwo-bold.ttf) format(truetype);
-    font-weigth: bold;
+    font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: "estedad regular";
     src: url(font/Estedad-Regular.ttf) format(truetype);
-    font-weigth: normal;
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -39,7 +39,7 @@
 @font-face {
     font-family: "estedad semibold";
     src: url(font/Estedad-SemiBold.ttf) format(truetype);
-    font-weigth: semibold;
+    font-weight: semibold;
     font-style: normal;
 }
 
@@ -539,7 +539,7 @@ button {
 .presentacion h2,
 .presentacion p {
     color: var(--color-marron);
-    max-width: 1920px;
+    max-width: 2650px;
     text-align: center;
 }
 
@@ -580,7 +580,7 @@ button {
 summary {
     color: var(--color-blanco);
     font-family: 'estedad medium', sans-serif;
-    font-size: 1,5rem;
+    font-size: 1.5rem;
     background-color: var(--color-primario);
     border-radius: 15px;
     width: 50rem;
