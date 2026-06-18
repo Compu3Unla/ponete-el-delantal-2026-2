@@ -4,28 +4,28 @@
 @font-face {
     font-family: "lobstertwo regular";
     src: url(font/LobsterTwo-Regular.ttf) format(truetype);
-    font-weight: normal;
+    font-weight:normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "lobstertwo italic";
     src: url(font/lobstertwo-italic.ttf) format(truetype);
-    font-weight: italic;
+    font-weigth: italic;
     font-style: italic;
 }
 
 @font-face {
     font-family: "lobstertwo bold";
     src: url(font/lobstertwo-bold.ttf) format(truetype);
-    font-weight: bold;
+    font-weigth: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: "estedad regular";
     src: url(font/Estedad-Regular.ttf) format(truetype);
-    font-weight: normal;
+    font-weigth: normal;
     font-style: normal;
 }
 
@@ -39,7 +39,7 @@
 @font-face {
     font-family: "estedad semibold";
     src: url(font/Estedad-SemiBold.ttf) format(truetype);
-    font-weight: semibold;
+    font-weigth: semibold;
     font-style: normal;
 }
 
@@ -75,16 +75,15 @@ body {
 
 h1 {
     font-family: "lobstertwo bold", sans-serif;
-    font-size: 5rem;
-    line-height: 5rem;
+    font-size: 6rem;
+    line-height: 8rem;
     color: var(--color-blanco);
 }
 
 h2 {
     font-family: "lobstertwo regular";
-    font-size: 2.5rem;    
-    line-height: 3rem;
-    color: var(--color-marron);
+    font-size: 2.3rem;
+    color: var(--marron);
 }
 
 h3 {
@@ -181,7 +180,6 @@ footer {
     align-items: center;
     gap: 35px;
     align-self: stretch;
-    background-color: var(--color-primario);
 }
 
 footer ul {
@@ -246,32 +244,9 @@ footer p {
     max-width: 40vw;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 40px;
     color: var(--color-blanco);
     z-index: 3;
-}
-
-#textos-hero h1 {
-    animation-name: titulares;
-    animation-duration: 3s;
-    animation-timing-function: ease-in-out;
-    animation-direction: normal;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: none;
-    animation-play-state: running;
-}
-
-@keyframes titulares {
-    0% {
-        color: var(--color-verde);
-    }
-    50% {
-        color: var(--color-blanco);
-    }
-    100% {
-        color: var(--color-primario);
-    }
 }
 
 /* css cards componentes */
@@ -432,9 +407,10 @@ footer p {
 
 }
 
-.noticias-index h4,
-.noticias-index h6,
-.noticias-index p {
+.noticias-index,
+h4,
+h6,
+p {
     color: var(--color-blanco);
 }
 
@@ -507,26 +483,6 @@ button {
     padding: 10px;
     display: flex;
     align-items: center;
-    animation-name: button;
-    animation-duration: 5s;
-    animation-timing-function: ease-in-out;
-    animation-direction: normal;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: none;
-    animation-play-state: running;
-}
-
-@keyframes button {
-    0% {
-        color: var(--color-verde);
-    }
-    50% {
-        color: var(--color-marron);
-    }
-    100% {
-        color: var(--color-blanco);
-    }
 }
 
 .form {
@@ -563,6 +519,7 @@ button {
 }
 
 
+
 /* termina css de contacto */
 
 .titular {
@@ -580,76 +537,43 @@ button {
 
 /* css de Sobre Mí */
 
-.presentacion h2,
-.presentacion p {
-    color: var(--color-marron);
-    max-width: 2650px;
-    text-align: center;    
-    padding: 20px 80px;
+.presentacion {
+    text-align: center;
 }
 
 .galeria-sobremi img {
     border-radius: 29px;
-    max-width: 100%;
-    height: auto;
 }
 
 .galeria-sobremi {
     display: flex;
-    flex-wrap: wrap;
+    height: 514px;
     padding: 45px 0 22px 0;
     justify-content: center;
-    gap: 20px;
-}
-
-.personal,
-.justificacion {
-    display: flex;
-    padding: 20px 80px;
-    flex-direction: column;
-    gap: 40px;
-}
-
-.menu-desplegable {
-    display: flex;
-    padding: 30px 90px;
-    flex-direction: column;
-    justify-content: center;
-    gap: 24px;
+    align-items: flex-start;
+    gap: 108px;
+    align-self: stretch;
 }
 
 summary {
     color: var(--color-blanco);
     font-family: 'estedad medium', sans-serif;
-    font-size: 1.5rem;
-    background-color: var(--color-primario);
-    border-radius: 15px;
-    max-width: 950px;
-    padding: 20px;
-    gap: 40px;
+    font-size: 2.1875rem;
+    font-weight: 500px;
+    line-height: 5rem;
 }
-
-details p {
-    color: var(--color-blanco);
-    background-color: var(--color-verde);
-    border-radius: 15px;
-    padding: 20px;
-    max-width: 950px;
-}
-
-/* termina css de Sobre mí */
 
 /*comienzo css recetario*/
-.receta{
-    width:100%;
-    max-width:1200px;
-    margin:0 auto;
-    padding:20px 90px 80px;
+.receta {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 90px 80px;
 }
 
 
-main{
-    width:100%;
+main {
+    width: 100%;
 }
 
 .titular {
@@ -657,11 +581,6 @@ main{
     justify-content: center;
 }
 
-.categorias{
-    width:100%;
-    padding:0;
-    margin-bottom:40px;
-}
 
 .contenido-receta {
     display: flex;
@@ -731,40 +650,40 @@ main{
     gap: 10px;
 }
 
-.pasos{
-    display:flex;
-    flex-direction:column;
-    gap:10px;
-    margin-top:50px;
+.pasos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 50px;
 }
 
-.pasos li{
-    display:flex;
-    align-items:flex-start;
+.pasos li {
+    display: flex;
+    align-items: flex-start;
 
-    gap:30px;
+    gap: 30px;
 
-    padding:8px 0;
+    padding: 8px 0;
 }
 
-.pasos h6{
-    color:var(--color-marron);
+.pasos h6 {
+    color: var(--color-marron);
 
-    font-size:1rem;
+    font-size: 1rem;
 
-    line-height:1.6;
+    line-height: 1.6;
 
-    max-width:650px;
+    max-width: 650px;
 }
 
-.pasos h2{
-    font-size:3rem;
+.pasos h2 {
+    font-size: 3rem;
 
-    line-height:1;
+    line-height: 1;
 
-    padding:0;
+    padding: 0;
 
-    min-width:40px;
+    min-width: 40px;
 }
 
 
@@ -782,52 +701,126 @@ main{
 
 
 .categorias a {
-    color:white;
+    color: white;
 
-    font-size:1rem;
+    font-size: 1rem;
 
-    white-space:nowrap;
+    white-space: nowrap;
 }
 
-.categorias ul {
-    width:100%;
-    display:flex;
-    justify-content:space-around;
-    align-items:center;
-
-    background-color:var(--color-verde);
-
-    padding:20px 0;
-
-    margin:0;
-}
-
-.categorias li {
-    flex:1;
-    text-align:center;
-}
-
-h2{
+h2 {
     padding: 30px;
 }
 
-/* Responsive en 500px para Sobre mí */
-
-@media screen and (max-width: 500px) {
-
-summary {
-    padding: 10px;
+/* MENU DESPLEGABLE RECETARIO */
+.categorias {
+    width: 100%;
+    background-color: var(--color-verde);
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    margin-bottom: 100px;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
 }
 
-details p {
-    padding: 10px;
-}
-.personal,
-.justificacion {
-    padding: 15px;
+.categoria {
+    position: relative;
+    flex: 1;
 }
 
-.menu-desplegable {
-    padding: 15px;
+.categoria button {
+
+    width: 100%;
+    height: 55px;
+
+    border: none;
+    background: transparent;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--color-blanco);
+
+    font-family: "estedad medium", sans-serif;
+    font-size: 1rem;
+
+    white-space: nowrap;
+
+    cursor: pointer;
+
+    border-right: 1px solid rgba(255,255,255,.15);
+
+    transition: background-color .3s ease;
 }
+
+.categoria:first-child button {
+    border-radius: 10px 0 0 0;
+}
+
+
+.categoria:last-child button {
+    border-right: none;
+    border-radius: 0 10px 0 0;
+}
+
+.categoria button:hover {
+    background-color: rgba(255,255,255,.08);
+}
+
+.submenu-recetario {
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    width: 100%;
+
+    background-color: var(--color-verde);
+
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 0 0 10px 10px;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(-10px);
+
+    transition:
+        opacity .3s ease,
+        transform .3s ease;
+
+    z-index: 100;
+
+    padding: 10px 0;
+}
+
+.categoria:hover .submenu-recetario {
+
+    opacity: 1;
+    visibility: visible;
+
+    transform: translateY(0);
+}
+
+.submenu-recetario li {
+
+    color: var(--color-blanco);
+
+    font-size: 0.9rem;
+
+    text-align: center;
+
+    padding: 8px 10px;
+
+    cursor: pointer;
+
+    transition: background-color .2s ease;
+}
+
+.submenu-recetario li:hover {
+    background-color: rgba(255,255,255,0.15);
 }
