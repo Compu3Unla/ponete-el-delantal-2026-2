@@ -297,6 +297,10 @@ footer p {
     gap: 50px;
 }
 
+#recetascards h4{
+    color: var(--color-marron);
+}
+
 #cards {
     display: flex;
     width: 100%;
@@ -350,7 +354,7 @@ footer p {
 
 #frase {
     width: 100%;
-    height: 25vh;
+    height: 30vh;
     display: flex;
     flex-direction: column;
     padding: 40px 0;
