@@ -11,21 +11,21 @@
 @font-face {
     font-family: "lobstertwo italic";
     src: url(font/lobstertwo-italic.ttf) format(truetype);
-    font-weight: italic;
+    font-weigth: italic;
     font-style: italic;
 }
 
 @font-face {
     font-family: "lobstertwo bold";
     src: url(font/lobstertwo-bold.ttf) format(truetype);
-    font-weight: bold;
+    font-weigth: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: "estedad regular";
     src: url(font/Estedad-Regular.ttf) format(truetype);
-    font-weight: normal;
+    font-weigth: normal;
     font-style: normal;
 }
 
@@ -39,7 +39,7 @@
 @font-face {
     font-family: "estedad semibold";
     src: url(font/Estedad-SemiBold.ttf) format(truetype);
-    font-weight: semibold;
+    font-weigth: semibold;
     font-style: normal;
 }
 
@@ -72,12 +72,16 @@ body {
     color: var(--color-blanco);
     margin: 0;
     padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
     font-family: "lobstertwo bold", sans-serif;
-    font-size: 5rem;
-    line-height: 5rem;
+    font-size: 6rem;
+    line-height: 8rem;
     color: var(--color-blanco);
 }
 
@@ -249,7 +253,7 @@ footer p {
     text-align: left;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 40px;
     color: var(--color-blanco);
     z-index: 3;
 }
@@ -583,33 +587,47 @@ footer p {
     border-radius: 50px;
 }
 
-.noticias-index h4,
-.noticias-index h6,
-.noticias-index p {
+.noticias-index,
+h4,
+h6,
+p {
     color: var(--color-blanco);
 }
 
 /* termina css de Index */
 
 /* empieza css de contacto.html */
+#contenedor-contacto {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+}
+
 #contactar {
     display: flex;
     width: 100%;
     height: 100%;
     padding: 88px 90px;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     gap: 90px;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 #formulario {
     display: flex;
-    width: 45%;
+    width: auto;
     height: 100%;
-    padding: 90px 90px 40px 59px;
+    padding: 26px 90px 40px 59px;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     gap: 33px;
     background-color: var(--color-verde);
     border-radius: 10px;
@@ -629,7 +647,7 @@ footer p {
 label {
     color: var(--color-blanco);
     font-family: "lobstertwo regular", sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 textarea {
@@ -645,7 +663,7 @@ textarea {
 .botones {
     display: flex;
     justify-content: space-between;
-    padding: 15px 0px;
+    padding: 34px 0px;
 }
 
 button {
@@ -688,7 +706,7 @@ button {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 14px;
+    gap: 20px;
 }
 
 #subscripcion {
@@ -696,10 +714,10 @@ button {
     padding: 90px 28px;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     gap: 34px;
-    flex: 1 0 0;
-    align-self: stretch;
+    flex: 1;
+    max-width: 400px;
 }
 
 #subscripcion h4 {
@@ -714,6 +732,7 @@ button {
     flex-direction: row;
     gap: 20px;
 }
+
 
 
 /* termina css de contacto */
@@ -743,32 +762,16 @@ button {
 
 .galeria-sobremi img {
     border-radius: 29px;
-    max-width: 100%;
-    height: auto;
 }
 
 .galeria-sobremi {
     display: flex;
-    flex-wrap: wrap;
+    height: 514px;
     padding: 45px 0 22px 0;
     justify-content: center;
-    gap: 20px;
-}
-
-.personal,
-.justificacion {
-    display: flex;
-    padding: 20px 80px;
-    flex-direction: column;
-    gap: 40px;
-}
-
-.menu-desplegable {
-    display: flex;
-    padding: 30px 90px;
-    flex-direction: column;
-    justify-content: center;
-    gap: 24px;
+    align-items: flex-start;
+    gap: 108px;
+    align-self: stretch;
 }
 
 summary {
@@ -790,8 +793,6 @@ details p {
     padding: 20px;
     max-width: 950px;
 }
-
-/* termina css de Sobre mí */
 
 /*comienzo css recetario*/
 .receta {
@@ -832,31 +833,34 @@ main {
     border-radius: 10px;
 }
 
+
 .datos-receta {
-    display: flex;
-    justify-content: space-around;
     background-color: var(--color-primario);
-    padding: 15px;
-    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 12px;
 }
 
 .contenido {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 6px;
 }
 
 .contenido img {
-    width: 42px;
-    height: 42px;
+    width: 24px;
+    height: 24px;
 }
 
 .contenido p {
+    font-size: 0.9rem;
     color: var(--color-blanco);
+    white-space: nowrap;
 }
 
 .notas {
-    width: 30%;
+    width: 25%;
     min-width: 220px;
     background-color: var(--color-primario);
     padding: 20px;
@@ -867,22 +871,15 @@ main {
     color: var(--color-blanco);
 }
 
-.ingredientes {
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
-}
-
 .ingredientes p {
     max-width: none;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
 }
 
-.ingredientes-nombre,
-.ingredientes-cantidad {
+.ingredientes-nombre {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 16px;
 }
 
 .pasos {
@@ -892,35 +889,32 @@ main {
     margin-top: 50px;
 }
 
+.pasos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 50px;
+.pasos p {
+    font-family: "estedad regular", sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--color-marron);
+    max-width: 650px;
+}
+
 .pasos li {
     display: flex;
     align-items: flex-start;
-
     gap: 30px;
-
     padding: 8px 0;
-}
-
-.pasos h6 {
-    color: var(--color-marron);
-
-    font-size: 1rem;
-
-    line-height: 1.6;
-
-    max-width: 650px;
 }
 
 .pasos h2 {
     font-size: 3rem;
-
     line-height: 1;
-
     padding: 0;
-
     min-width: 40px;
 }
-
 
 .cierre-notas {
     text-align: center;
@@ -928,12 +922,102 @@ main {
 }
 
 .columna-izquierda {
-    width: 70%;
+    width: 60%;
     display: flex;
     flex-direction: column;
 }
 
+.categorias a {
+    color: white;
+    font-size: 1rem;
+    white-space: nowrap;
+}
 
+h2 {
+    padding: 30px;
+}
+
+/* MENU DESPLEGABLE RECETARIO */
+.categorias {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    background-color: var(--color-verde);
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 20px;
+}
+
+.categoria {
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.categoria button {
+    width: 100%;
+    height: 55px;
+    border: none;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-blanco);
+    font-family: "estedad medium", sans-serif;
+    font-size: 1rem;
+    white-space: nowrap;
+    cursor: pointer;
+    border-right: 1px solid rgba(255, 255, 255, .15);
+    transition: background-color .3s ease;
+    padding: 0 40px;
+}
+
+
+.categoria:first-child button {
+    border-radius: 10px 0 0 0;
+}
+
+.categoria:last-child button {
+    border-right: none;
+    border-radius: 0 10px 0 0;
+}
+
+.categoria button:hover {
+    background-color: rgba(255, 255, 255, .08);
+}
+
+.submenu-recetario {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-verde);
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 0 10px 10px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition:
+        opacity .3s ease,
+        transform .3s ease;
+    z-index: 100;
+    padding: 10px 0;
+}
+
+.categoria:hover .submenu-recetario {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.submenu-recetario li {
+    color: var(--color-blanco);
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 8px 10px;
+    cursor: pointer;
+    transition: background-color .2s ease;
+}
 
 .categorias a {
     color: white;
@@ -964,10 +1048,59 @@ main {
 h2 {
     padding: 30px;
 }
+.submenu-recetario li:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
 
-/* Responsive en 500px para Sobre mí */
+@media (max-width: 500px) {
 
-@media screen and (max-width: 500px) {
+    main {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    .receta {
+        padding: 20px 10px;
+    }
+
+    .contenido-receta {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .columna-izquierda,
+    .notas {
+        width: 100%;
+    }
+
+    .columna-izquierda img {
+        width: 100%;
+        height: auto;
+    }
+
+    .notas {
+        padding: 15px;
+    }
+
+    .ingredientes p {
+        font-size: 0.8rem;
+        line-height: 1.2;
+    }
+
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 15px 25px;
+        padding: 20px;
+    }
+
+    header>a,
+    .buscador {
+        margin: 0;
+    }
 
     summary {
         padding: 10px;
@@ -984,5 +1117,117 @@ h2 {
 
     .menu-desplegable {
         padding: 15px;
+    .botonera {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .botonera a {
+        font-size: .8rem;
+    }
+
+    .buscador {
+        width: 100px;
+        height: 25px;
+        background: white;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        padding-left: 8px;
+    }
+
+    .buscador img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .categorias {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 8px;
+    }
+
+    .categoria {
+        margin: 0;
+    }
+
+    .categorias * {
+        font-size: 0.8rem !important;
+    }
+
+    .receta {
+        text-align: center;
+    }
+
+    .receta h2 {
+        font-size: 1.5rem;
+        line-height: 1.2;
+    }
+
+    .contenido {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contenido img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .datos-receta {
+        padding: 8px;
+        gap: 5px;
+    }
+
+    .contenido p {
+        font-size: 0.7rem;
+        line-height: 1.1;
+    }
+
+
+    .pasos li {
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    .pasos li h2 {
+        line-height: 0;
+    }
+
+    .pasos p {
+        font-size: 0.9rem;
+    }
+
+    footer {
+        padding: 30px 10px;
+        height: auto;
+        text-align: center;
+    }
+
+    footer ul {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    footer li {
+        width: auto;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer li img {
+        width: 30px;
+        height: 30px;
+        text-align: center;
+    }
+
+    footer li p {
+        font-size: 0.8rem;
+        text-align: center;
     }
 }
