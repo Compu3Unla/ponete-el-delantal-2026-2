@@ -676,28 +676,6 @@ button {
     padding: 10px;
     display: flex;
     align-items: center;
-    animation-name: button;
-    animation-duration: 5s;
-    animation-timing-function: ease-in-out;
-    animation-direction: normal;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: none;
-    animation-play-state: running;
-}
-
-@keyframes button {
-    0% {
-        color: var(--color-verde);
-    }
-
-    50% {
-        color: var(--color-marron);
-    }
-
-    100% {
-        color: var(--color-blanco);
-    }
 }
 
 .form {
@@ -731,23 +709,6 @@ button {
     display: flex;
     flex-direction: row;
     gap: 20px;
-}
-
-
-
-/* termina css de contacto */
-
-.titular {
-    display: flex;
-    padding: 10px;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
-    grid-row: 2 / span 1;
-    grid-column: 1 / span 1;
-    justify-self: stretch;
 }
 
 /* css de Sobre Mí */
@@ -889,12 +850,8 @@ main {
     margin-top: 50px;
 }
 
-.pasos {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 50px;
 .pasos p {
+
     font-family: "estedad regular", sans-serif;
     font-size: 1rem;
     line-height: 1.6;
@@ -1054,180 +1011,181 @@ h2 {
 
 @media (max-width: 500px) {
 
-    main {
-        max-width: 100%;
-        padding: 0 15px;
-    }
+main {
+    max-width: 100%;
+    padding: 0 15px;
+}
 
-    .receta {
-        padding: 20px 10px;
-    }
+.receta {
+    padding: 20px 10px;
+}
 
-    .contenido-receta {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
+.contenido-receta {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
 
-    .columna-izquierda,
-    .notas {
-        width: 100%;
-    }
+.columna-izquierda,
+.notas {
+     width: 100%;
+}
 
-    .columna-izquierda img {
-        width: 100%;
-        height: auto;
-    }
+.columna-izquierda img {
+    width: 100%;
+    height: auto;
+}
 
-    .notas {
-        padding: 15px;
-    }
+.notas {
+    padding: 15px;
+}
 
-    .ingredientes p {
-        font-size: 0.8rem;
-        line-height: 1.2;
-    }
+.ingredientes p {
+    font-size: 0.8rem;
+    line-height: 1.2;
+}
 
-    header {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 15px 25px;
-        padding: 20px;
-    }
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px 25px;
+    padding: 20px;
+}
 
-    header>a,
-    .buscador {
-        margin: 0;
-    }
+ header>a,
+.buscador {
+    margin: 0;
+}
 
-    summary {
-        padding: 10px;
-    }
+summary {
+    padding: 10px;
+}
 
-    details p {
-        padding: 10px;
-    }
+details p {
+    padding: 10px;
+}
 
-    .personal,
-    .justificacion {
-        padding: 15px;
-    }
+.personal,
+.justificacion {
+    padding: 15px;
+}
 
-    .menu-desplegable {
-        padding: 15px;
-    .botonera {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 15px;
-    }
+.menu-desplegable {
+    padding: 15px;
+}
+.botonera {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
 
-    .botonera a {
-        font-size: .8rem;
-    }
+.botonera a {
+    font-size: .8rem;
+}
 
-    .buscador {
-        width: 100px;
-        height: 25px;
-        background: white;
-        border-radius: 20px;
-        display: flex;
-        align-items: center;
-        padding-left: 8px;
-    }
+.buscador {
+    width: 100px;
+    height: 25px;
+    background: white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+}
 
-    .buscador img {
-        width: 18px;
-        height: 18px;
-    }
+.buscador img {
+    width: 18px;
+    height: 18px;
+}
 
-    .categorias {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-        padding: 8px;
-    }
+.categorias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 8px;
+}
 
-    .categoria {
-        margin: 0;
-    }
+.categoria {
+    margin: 0;
+}
 
-    .categorias * {
-        font-size: 0.8rem !important;
-    }
+.categorias * {
+    font-size: 0.8rem !important;
+}
 
-    .receta {
-        text-align: center;
-    }
+.receta {
+    text-align: center;
+}
 
-    .receta h2 {
-        font-size: 1.5rem;
-        line-height: 1.2;
-    }
+.receta h2 {
+    font-size: 1.5rem;
+    line-height: 1.2;
+}
 
-    .contenido {
-        flex-direction: column;
-        text-align: center;
-    }
+.contenido {
+    flex-direction: column;
+    text-align: center;
+}
 
-    .contenido img {
-        width: 20px;
-        height: 20px;
-    }
+.contenido img {
+    width: 20px;
+    height: 20px;
+}
 
-    .datos-receta {
-        padding: 8px;
-        gap: 5px;
-    }
+.datos-receta {
+    padding: 8px;
+    gap: 5px;
+}
 
-    .contenido p {
-        font-size: 0.7rem;
-        line-height: 1.1;
-    }
+.contenido p {
+    font-size: 0.7rem;
+    line-height: 1.1;
+}
 
 
-    .pasos li {
-        gap: 10px;
-        align-items: flex-start;
-    }
+.pasos li {
+    gap: 10px;
+    align-items: flex-start;
+}
 
-    .pasos li h2 {
-        line-height: 0;
-    }
+.pasos li h2 {
+    line-height: 0;
+}
 
-    .pasos p {
-        font-size: 0.9rem;
-    }
+.pasos p {
+    font-size: 0.9rem;
+}
 
-    footer {
-        padding: 30px 10px;
-        height: auto;
-        text-align: center;
-    }
+footer {
+    padding: 30px 10px;
+    height: auto;
+    text-align: center;
+}
 
-    footer ul {
-        flex-wrap: wrap;
-        gap: 20px;
-    }
+footer ul {
+    flex-wrap: wrap;
+    gap: 20px;
+}
 
-    footer li {
-        width: auto;
-        flex-direction: column;
-        text-align: center;
-    }
+footer li {
+    width: auto;
+    flex-direction: column;
+    text-align: center;
+}
 
-    footer li img {
-        width: 30px;
-        height: 30px;
-        text-align: center;
-    }
+footer li img {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
 
-    footer li p {
-        font-size: 0.8rem;
-        text-align: center;
-    }
+footer li p {
+    font-size: 0.8rem;
+    text-align: center;
+}
 }
