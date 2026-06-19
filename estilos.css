@@ -71,6 +71,9 @@ body {
     background-color: var(--color-rosa-fondos);
     color: var(--color-blanco);
     width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
@@ -135,11 +138,15 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 40px;
+    padding: 10px 40px;
     gap: 150px;
     background-color: var(--color-primario);
 }
 
+header img {
+    display: flex;
+    align-items: center;
+}
 
 .buscador {
     background-color: var(--color-blanco);
@@ -417,24 +424,37 @@ p {
 /* termina css de Index */
 
 /* empieza css de contacto.html */
+#contenedor-contacto {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+}
+
 #contactar {
     display: flex;
     width: 100%;
     height: 100%;
     padding: 88px 90px;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     gap: 90px;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 #formulario {
     display: flex;
-    width: 45%;
+    width: auto;
     height: 100%;
-    padding: 90px 90px 40px 59px;
+    padding: 26px 90px 40px 59px;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     gap: 33px;
     background-color: var(--color-verde);
     border-radius: 10px;
@@ -454,7 +474,7 @@ p {
 label {
     color: var(--color-blanco);
     font-family: "lobstertwo regular", sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 textarea {
@@ -470,7 +490,7 @@ textarea {
 .botones {
     display: flex;
     justify-content: space-between;
-    padding: 15px 0px;
+    padding: 34px 0px;
 }
 
 button {
@@ -491,7 +511,7 @@ button {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 14px;
+    gap: 20px;
 }
 
 #subscripcion {
@@ -499,10 +519,10 @@ button {
     padding: 90px 28px;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     gap: 34px;
-    flex: 1 0 0;
-    align-self: stretch;
+    flex: 1;
+    max-width: 400px;
 }
 
 #subscripcion h4 {
@@ -565,14 +585,14 @@ summary {
 
 /*comienzo css recetario*/
 .receta {
-    width: 100%;
-    padding: 20px 90px 80px;
+    width:100%;
+    max-width:1200px;
+    margin:0 auto;
+    padding:20px 90px 80px;
 }
 
-
 main {
-    max-width: 1200px;
-    margin: 0 auto;
+    width:100%;
 }
 
 .titular {
