@@ -53,7 +53,7 @@
     font-family: "estedad regular", sans-serif;
     font-size: 1.5rem;
     font-style: normal;
-    font-weight: 400;
+    font-weight: normal;
     line-height: 2rem;
     color: var(--color-marron);
     text-align: left;
@@ -70,6 +70,8 @@
 body {
     background-color: var(--color-rosa-fondos);
     color: var(--color-blanco);
+    margin: 0;
+    padding: 0;
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -85,13 +87,14 @@ h1 {
 
 h2 {
     font-family: "lobstertwo regular";
-    font-size: 2.3rem;
-    color: var(--marron);
+    font-size: 2.5rem;
+    line-height: 3rem;
+    color: var(--color-marron);
 }
 
 h3 {
     font-family: "lobstertwo regular";
-    font-size: 3rem;
+    font-size: 2rem;
     line-height: 3rem;
     text-align: center;
     color: var(--color-blanco);
@@ -106,21 +109,23 @@ h4 {
 
 h5 {
     font-family: "estedad medium", sans-serif;
-    font-size: 2rem;
-    line-height: 5rem;
+    font-size: 1rem;
+    line-height: 1.2rem;
     color: var(--color-blanco);
 }
 
-h6 {
-    font-family: "estedad semibold", sans-serif;
-    font-size: 1rem;
-    line-height: 1.5rem;
+h6,
+a {
+    font-family: "estedad regular", sans-serif;
+    font-size: 0.8rem;
+    line-height: 1rem;
     color: var(--color-blanco);
 }
 
 p {
     font-family: "estedad regular", sans-serif;
     font-size: 1.3rem;
+    line-height: 1.8rem;
     max-width: 950px;
     color: var(--color-marron);
 }
@@ -158,7 +163,6 @@ header img {
     padding: 10px 10px;
 }
 
-
 .botonera {
     display: flex;
     justify-content: flex-end;
@@ -168,7 +172,6 @@ header img {
     flex: 1 0 0;
 }
 
-
 .botonera a {
     color: var(--color-blanco);
     text-align: center;
@@ -176,7 +179,6 @@ header img {
     line-height: 100%;
     white-space: nowrap;
 }
-
 
 footer {
     display: flex;
@@ -187,6 +189,7 @@ footer {
     align-items: center;
     gap: 35px;
     align-self: stretch;
+    background-color: var(--color-blanco);
 }
 
 footer ul {
@@ -197,7 +200,7 @@ footer ul {
     align-self: stretch;
 }
 
-footer li {
+footer li a {
     display: flex;
     width: 230px;
     align-items: center;
@@ -213,7 +216,7 @@ footer p {
 
 #hero {
     width: 100%;
-    height: 100vh;
+    height: 75vh;
     display: flex;
     flex-direction: column;
     padding: 135px 90px;
@@ -229,9 +232,7 @@ footer p {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* Hace que el video cubra todo el espacio sin deformarse */
     z-index: 1;
-    /* Lo coloca por detrás del contenido */
 }
 
 #hero-gradiente {
@@ -248,12 +249,38 @@ footer p {
 #textos-hero {
     position: relative;
     padding: 0 90px;
-    max-width: 40vw;
+    max-width: 40%;
+    text-align: left;
     display: flex;
     flex-direction: column;
     gap: 40px;
     color: var(--color-blanco);
     z-index: 3;
+}
+
+#textos-hero h1 {
+    animation-name: titulares;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: none;
+    animation-play-state: running;
+}
+
+@keyframes titulares {
+    0% {
+        color: var(--color-verde);
+    }
+
+    50% {
+        color: var(--color-blanco);
+    }
+
+    100% {
+        color: var(--color-primario);
+    }
 }
 
 /* css cards componentes */
@@ -262,7 +289,7 @@ footer p {
     background: var(--color-rosa-fondos);
     color: var(--color-marron);
     width: 100%;
-    height: 80vh;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -293,16 +320,15 @@ footer p {
 
 .tarjetas-texto {
     color: var(--color-blanco);
-    max-width: 90%;
+    max-width: 60%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    border-radius: 10px;
-    padding: 10px 20px;
+    padding: 10px 0 30px 20px;
     gap: 50px;
 }
 
-.tarjetas-texto p a {
+.tarjetas-texto a {
     color: var(--color-blanco);
 }
 
@@ -311,47 +337,190 @@ footer p {
     align-self: stretch;
 }
 
+#cards :hover {
+    background-color: var(--color-marron);
+    border-radius: 10px;
+}
+
+.tarjetas-texto a:hover {
+    font-family: "estedad semibold", sans-serif;
+}
+
 /* termina cards */
 
 #frase {
-    width: 100vw;
-    height: 30vh;
+    width: 100%;
+    height: 25vh;
     display: flex;
     flex-direction: column;
-    padding: 90px 0;
+    padding: 40px 0;
     align-items: center;
     background-color: var(--color-rosa-fondos);
     background-image: url(img/svg/frase-u.svg);
     background-repeat: repeat;
+    background-repeat: repeat-x;
 }
 
-#frase h3 {
+#frase h2 {
     text-align: center;
     color: var(--color-blanco);
-    max-width: 70vw;
+    max-width: 50%;
 }
 
-#galeriahome {
-    background-color: var(--color-rosa-fondos);
+/* galeria index */
+
+#galeria {
     width: 100%;
-    height: 80vh;
+    height: 130vh;
+    padding-left: 90px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 70px;
     align-self: stretch;
 }
 
-.galeriaindex {
+#galeria #titulos {
     width: 100%;
+    height: 20vh;
+    padding: 90px 0;
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 40px;
 }
 
-.galeriaindex img {
-    border-radius: 60px;
+#galeria #fotos {
+    height: 80vh;
+    padding: 0 90px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    align-self: stretch;
+
+}
+
+#titulos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px 0 0 0;
+}
+
+#miniaturas {
+    width: 100%;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+#miniaturas img {
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+#miniaturas a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+    color: var(--color-marron);
+}
+
+#galeria {
+    display: none;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    padding: 0;
+}
+
+#galeria li {
+    display: flex;
+}
+
+#galeria-oculta {
+    display: flex;
+    width: 100vw;
+    max-width: 1450px;
+    overflow: hidden;
+    z-index: 20;
+}
+
+.fraccion-galeria {
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    min-width: 1400px;
+    height: 100vh;
+    justify-content: space-between;
+    padding: 60px 60px;
+
+}
+
+.primer-ultima-flecha {
+    visibility: hidden;
+}
+
+.close {
+    position: absolute;
+    top: 80px;
+    right: 2%;
+}
+
+/*Imagenes galeria*/
+
+#foto-1 {
+    background-image: url("img/galeria/cheesecake-escritorio.jpg");
+    border-radius: 20px;
+}
+
+#foto-2 {
+    background-image: url("img/galeria/triangulos-escritorio.jpg");
+    border-radius: 20px;
+}
+
+#foto-3 {
+    background-image: url("img/galeria/postre-oreo-escritorio.jpg");
+    border-radius: 20px;
+}
+
+#foto-4 {
+    background-image: url("img/galeria/muhammara-escritorio.jpg");
+    border-radius: 20px;
+}
+
+#foto-5 {
+    background-image: url("img/galeria/tallarines-escritorio.jpg");
+    border-radius: 20px;
+}
+
+#fondo-galeria {
+    background-color: black;
+    opacity: 0.95;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: var(--color-rosa-fondos);
 }
 
 #iconos {
@@ -383,7 +552,7 @@ footer p {
 }
 
 .noticias-index h4 {
-    padding-left: 90px;
+    padding: 0 10px;
 }
 
 .linea-noticias {
@@ -407,11 +576,15 @@ footer p {
 
 .flecha-noticias {
     display: flex;
-    width: 3.4375rem;
-    height: 2.25rem;
     justify-content: center;
     align-items: center;
+    border: 2px solid var(--color-blanco);
+    border-radius: 50px;
+}
 
+.flecha-noticias :hover {
+    background-color: var(--color-verde);
+    border-radius: 50px;
 }
 
 .noticias-index,
@@ -503,6 +676,28 @@ button {
     padding: 10px;
     display: flex;
     align-items: center;
+    animation-name: button;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: none;
+    animation-play-state: running;
+}
+
+@keyframes button {
+    0% {
+        color: var(--color-verde);
+    }
+
+    50% {
+        color: var(--color-marron);
+    }
+
+    100% {
+        color: var(--color-blanco);
+    }
 }
 
 .form {
@@ -557,8 +752,12 @@ button {
 
 /* css de Sobre Mí */
 
-.presentacion {
+.presentacion h2,
+.presentacion p {
+    color: var(--color-marron);
+    max-width: 2650px;
     text-align: center;
+    padding: 20px 80px;
 }
 
 .galeria-sobremi img {
@@ -578,26 +777,45 @@ button {
 summary {
     color: var(--color-blanco);
     font-family: 'estedad medium', sans-serif;
-    font-size: 2.1875rem;
-    font-weight: 500px;
-    line-height: 5rem;
+    font-size: 1.5rem;
+    background-color: var(--color-primario);
+    border-radius: 15px;
+    max-width: 950px;
+    padding: 20px;
+    gap: 40px;
+    cursor: pointer;
+}
+
+details p {
+    color: var(--color-blanco);
+    background-color: var(--color-verde);
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 950px;
 }
 
 /*comienzo css recetario*/
 .receta {
-    width:100%;
-    max-width:1200px;
-    margin:0 auto;
-    padding:20px 90px 80px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 90px 80px;
 }
 
+
 main {
-    width:100%;
+    width: 100%;
 }
 
 .titular {
     display: flex;
     justify-content: center;
+}
+
+.categorias {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 40px;
 }
 
 .contenido-receta {
@@ -671,6 +889,11 @@ main {
     margin-top: 50px;
 }
 
+.pasos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 50px;
 .pasos p {
     font-family: "estedad regular", sans-serif;
     font-size: 1rem;
@@ -796,6 +1019,35 @@ h2 {
     transition: background-color .2s ease;
 }
 
+.categorias a {
+    color: white;
+
+    font-size: 1rem;
+
+    white-space: nowrap;
+}
+
+.categorias ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: var(--color-verde);
+
+    padding: 20px 0;
+
+    margin: 0;
+}
+
+.categorias li {
+    flex: 1;
+    text-align: center;
+}
+
+h2 {
+    padding: 30px;
+}
 .submenu-recetario li:hover {
     background-color: rgba(255, 255, 255, 0.15);
 }
@@ -850,6 +1102,21 @@ h2 {
         margin: 0;
     }
 
+    summary {
+        padding: 10px;
+    }
+
+    details p {
+        padding: 10px;
+    }
+
+    .personal,
+    .justificacion {
+        padding: 15px;
+    }
+
+    .menu-desplegable {
+        padding: 15px;
     .botonera {
         width: 100%;
         display: flex;

@@ -7,11 +7,23 @@
     <title>Ponete el Delantal</title>
     <link rel="icon" type="image/svg+xml" href="img/svg/logo-rosa.svg">
     <link href="estilos.css" rel="stylesheet" type="text/css">
+
+    <script>
+        function cambiarDisplay(visibilidadNueva) {
+            document.getElementById("galeria").style.display = visibilidadNueva
+        }
+        function mostrarGaleria() {
+            cambiarDisplay('flex')
+        }
+        function ocultarGaleria() {
+            cambiarDisplay('none')
+        }
+    </script>
 </head>
 
 <body>
     <header>
-        <a href="index.html"><img src="img/svg/logo.svg" alt="" width="65" height="55" /></a>
+        <a href="index.html"><img src="img/svg/logo.svg" alt="" width="60" height="50" /></a>
         <div class="buscador">
             <img src="img/svg/icono-lupa.svg" alt="" width="25" height="25" />
         </div>
@@ -23,138 +35,205 @@
         </nav>
     </header>
 
-    <section id="hero">
-        <video autoplay muted loop id="hero-fondo">
-            <source src="img/img/5515577-hd_1080_1920_25fps.mp4" type="video/mp4">
-        </video>
-        <div id="hero-gradiente"></div>
-        <div id="textos-hero">
-            <h1>Ponete el Delantal</h1>
-            <h6>BLOG DE COCINA</h6>
-        </div>
-    </section>
+    <main>
+        <section id="hero">
+            <video autoplay muted loop id="hero-fondo">
+                <source src="img/video/video-hero.mp4" type="video/mp4">
+            </video>
+            <div id="hero-gradiente"></div>
+            <div id="textos-hero">
+                <h1>Ponete el Delantal</h1>
+                <h5>BLOG DE COCINA</h5>
+            </div>
+        </section>
 
-    <section id="recetascards">
-        <h4>Recetas populares</h4>
-        <div id="cards">
-            <div class="tarjetas">
-                <img src="img/img/card-escritorio-brochette-optimizado.jpg" alt="" width="" height="" />
-                <div class="tarjetas-texto">
-                    <h6>Brocheta de pollo</h6>
-                    <p><a href="#">Ver más →</a></p>
+        <section id="recetascards">
+            <h4>Recetas populares</h4>
+            <div id="cards">
+                <div class="tarjetas">
+                    <img src="img/img/card-escritorio-brochette-optimizado.jpg" alt="" width="250" height="210" />
+                    <div class="tarjetas-texto">
+                        <h5>Brocheta de pollo</h5>
+                        <h6><a href="#">Ver más →</a></h6>
+                    </div>
+                </div>
+                <div class="tarjetas">
+                    <img src="img/img/card-escritorio-rollos-de-canela-optimizado.jpg" alt="" width="250"
+                        height="210" />
+                    <div class="tarjetas-texto">
+                        <h5>Rollos de canela</h5>
+                        <h6><a href="recetario.html">Ver más →</a></h6>
+                    </div>
+                </div>
+                <div class="tarjetas">
+                    <img src="img/img/card-escritorio-ensalada-de-fideos-optimizado.jpg" alt="" width="250"
+                        height="210" />
+                    <div class="tarjetas-texto">
+                        <h5>Ensalada de fideos</h5>
+                        <h6><a href="#">Ver más →</a></h6>
+                    </div>
+                </div>
+                <div class="tarjetas">
+                    <img src="img/img/card-mobile-tarta-de-verduras-optimizado.jpg" alt="" width="250" height="210" />
+                    <div class="tarjetas-texto">
+                        <h5>Tarta de zapallitos</h5>
+                        <h6><a href="#">Ver más →</a></h6>
+                    </div>
+                </div>
+                <div class="tarjetas">
+                    <img src="img/img/card-escritorio-sopa-paraguaya-optimizado.jpg" alt="" width="250" height="210" />
+                    <div class="tarjetas-texto">
+                        <h5>Sopa paraguaya</h5>
+                        <h6><a href="#">Ver más →</a></h6>
+                    </div>
+                </div>
+                <div class="tarjetas">
+                    <img src="img/img/card-escritorio-guiso-de-lentejas-optimizado.jpg" alt="" width="250"
+                        height="210" />
+                    <div class="tarjetas-texto">
+                        <h5>Guiso de lentejas</h5>
+                        <h6><a href="#">Ver más →</a></h6>
+                    </div>
                 </div>
             </div>
-            <div class="tarjetas">
-                <img src="img/img/card-escritorio-rollos-de-canela-optimizado.jpg" alt="" width="" height="" />
-                <div class="tarjetas-texto">
-                    <h6>Rollos de canela</h6>
-                    <p><a href="#">Ver más →</a></p>
-                </div>
-            </div>
-            <div class="tarjetas">
-                <img src="img/img/card-escritorio-ensalada-de-fideos-optimizado.jpg" alt="" width="" height="" />
-                <div class="tarjetas-texto">
-                    <h6>Ensalada de fideos</h6>
-                    <p><a href="#">Ver más →</a></p>
-                </div>
-            </div>
-            <div class="tarjetas">
-                <img src="img/img/card-mobile-tarta-de-verduras-optimizado.jpg" alt="" width="" height="" />
-                <div class="tarjetas-texto">
-                    <h6>Tarta de zapallitos</h6>
-                    <p><a href="#">Ver más →</a></p>
-                </div>
-            </div>
-            <div class="tarjetas">
-                <img src="img/img/card-escritorio-sopa-paraguaya-optimizado.jpg" alt="" width="" height="" />
-                <div class="tarjetas-texto">
-                    <h6>Sopa paraguaya</h6>
-                    <p><a href="#">Ver más →</a></p>
-                </div>
-            </div>
-            <div class="tarjetas">
-                <img src="img/img/card-escritorio-guiso-de-lentejas-optimizado.jpg" alt="" width="" height="" />
-                <div class="tarjetas-texto">
-                    <h6>Guiso de lentejas</h6>
-                    <p><a href="#">Ver más →</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="frase">
-        <h3>“Mi abuela me transmitió su pasión por la cocina, sus tips y algunas de sus recetas.”</h3>
-    </section>
+        <section id="frase">
+            <h2>“Mi abuela me transmitió su pasión por la cocina, sus tips y algunas de sus recetas.”</h2>
+        </section>
 
-    <section id="galeriahome">
-        <div class="galeriaindex">
-            <img src="img/img/galeria-escritorio-ensalada-de-tallarines-optimizado.jpg" alt="" width="640"
-                height="590" />
-            <img src="img/img/galeria-escritorio-triangulos-dulces-optimizado.jpg" alt="" width="640" height="590" />
-            <img src="img/img/galeria-escritorio-postre-oreo-optimizado.jpg" alt="" width="640" height="590" />
-            <img src="img/img/galeria-escritorio-muhammara-optimizado.jpg" alt="" width="640" height="590" />
-            <img src="img/img/galeria-escritorio-cheesecake-optimizado.jpg" alt="" width="640" height="590" />
-        </div>
-    </section>
-
-    <section id="iconos">
-        <div id="icon-index">
-            <img src="img/svg/dulce.svg" alt="" width="70" height="70" />
-            <img src="img/svg/salado.svg" alt="" width="70" height="70" />
-            <img src="img/svg/infantiles.svg" alt="" width="70" height="70" />
-            <img src="img/svg/diabetes.svg" alt="" width="70" height="70" />
-            <img src="img/svg/favoritos.svg" alt="" width="70" height="70" />
-        </div>
-    </section>
-
-    <article class="noticias-index">
-        <h4>Noticias</h4>
-        <div class="linea-noticias"></div>
-        <div class="noticia">
-            <img src="img/img/noticias-escritorio-1-optimizado.jpg" alt="" width="390" height="160" />
-            <div class="textos-noticia">
-                <h6>Semana de la Cocina Italiana en L’adesso Ristorante</h6>
-                <p>L´adesso celebra la Semana de la Cocina Italiana con un menú especial realizado con platos típicos de
-                    la cocina italiana</p>
-            </div>
-            <div class="flecha-noticias">
-                <a href="#"><h4>→</h4></a>
-            </div>
-        </div>
-        <div class="linea-noticias"></div>
-        <div class="noticia">
-            <img src="img/img/noticias-escritorio-1-optimizado.jpg" alt="" width="390" height="160" />
-            <div class="textos-noticia">
-                <h6>Semana de la Cocina Italiana en L’adesso Ristorante</h6>
-                <p>L´adesso celebra la Semana de la Cocina Italiana con un menú especial realizado con platos típicos de
-                    la cocina italiana</p>
-            </div>
-            <div class="flecha-noticias">
-                <a href="#">
-                    <h4>→</h4>
-                </a>
-            </div>
+        <div id="titulos">
+            <h2>¡Conocé nuestros platos más ricos!</h2>
         </div>
 
-    </article>
+        <section id="miniaturas">
+            <a href="#foto-1"><img src="img/galeria/cheesecake-thumbnail-escritorio.jpg" width="390px" height="390px"
+                    alt="Cheesecake" onClick="mostrarGaleria()">Cheesecake</a>
+            <a href="#foto-2"><img src="img/galeria/triangulos-thumbnail-escritorio.jpg" width="390px" height="390px"
+                    alt="Triangulos" onClick="mostrarGaleria()">Dulces</a>
+            <a href="#foto-3"><img src="img/galeria/postre-oreo-thumbnail-escritorio.jpg" width="390px" height="390px"
+                    alt="Postre oreo" onClick="mostrarGaleria()">Postre oreo</a>
+            <a href="#foto-4"><img src="img/galeria/muhammara-thumbnail-escritorio.jpg" width="390px" height="390px"
+                    alt="Muhammara" onClick="mostrarGaleria()">Muhammara</a>
+            <a href="#foto-5"><img src="img/galeria/tallarines-thumbnail-escritorio.jpg" width="390px" height="390px"
+                    alt="Ensalada" onClick="mostrarGaleria()">Tallarines</a>
+        </section>
 
+        <section id="galeria">
+            <div id="fondo-galeria">
+                <ul id="galeria-oculta">
+                    <li class="fraccion-galeria" id="foto-1">
+                        <a href="#" class="primer-ultima-flecha"> <img src="img/galeria/back.svg" width="20px"
+                                height="30px" alt="Anterior"></a>
+                        <img class="close" src="img/galeria/close.svg" alt="Cerrar" width="30px" height="30px"
+                            onClick="ocultarGaleria()">
+                        <a href="#foto-2"><img src="img/galeria/next.svg" width="20px" height="30px"
+                                alt="Siguiente"></a>
+                    </li>
+
+                    <li class="fraccion-galeria" id="foto-2">
+                        <a href="#foto-1"><img src="img/galeria/back.svg" width="20px" height="30px" alt="Anterior"></a>
+                        <img class="close" src="img/galeria/close.svg" alt="Cerrar" width="30px" height="30px"
+                            onClick="ocultarGaleria()">
+                        <a href="#foto-3"><img src="img/galeria/next.svg" width="20px" height="30px"
+                                alt="Siguiente"></a>
+                    </li>
+
+                    <li class="fraccion-galeria" id="foto-3">
+                        <a href="#foto-2"><img src="img/galeria/back.svg" width="20px" height="30px" alt="Anterior"></a>
+                        <img class="close" src="img/galeria/close.svg" alt="Cerrar" width="30px" height="30px"
+                            onClick="ocultarGaleria()">
+                        <a href="#foto-4"><img src="img/galeria/next.svg" width="20px" height="30px"
+                                alt="Siguiente"></a>
+                    </li>
+
+                    <li class="fraccion-galeria" id="foto-4">
+                        <a href="#foto-3"><img src="img/galeria/back.svg" width="20px" height="30px" alt="Anterior"></a>
+                        <img class="close" src="img/galeria/close.svg" alt="Cerrar" width="30px" height="30px"
+                            onClick="ocultarGaleria()">
+                        <a href="#foto-5"><img src="img/galeria/next.svg" width="20px" height="30px"
+                                alt="Siguiente"></a>
+                    </li>
+
+                    <li class="fraccion-galeria" id="foto-5">
+                        <a href="#foto-4"><img src="img/galeria/back.svg" width="20px" height="30px" alt="Anterior"></a>
+                        <img class="close" src="img/galeria/close.svg" alt="Cerrar" width="30px" height="30px"
+                            onClick="ocultarGaleria()">
+                        <a href="#" class="primer-ultima-flecha"><img src="img/galeria/next.svg" width="20px"
+                                height="30px" alt="Siguiente"></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="iconos">
+            <div id="icon-index">
+                <img src="img/svg/dulce.svg" alt="" width="60" height="60" />
+                <img src="img/svg/salado.svg" alt="" width="60" height="60" />
+                <img src="img/svg/infantiles.svg" alt="" width="60" height="60" />
+                <img src="img/svg/diabetes.svg" alt="" width="60" height="60" />
+                <img src="img/svg/favoritos.svg" alt="" width="60" height="60" />
+            </div>
+        </section>
+
+        <article class="noticias-index">
+            <h4>Noticias</h4>
+            <div class="linea-noticias"></div>
+            <div class="noticia">
+                <img src="img/img/noticias-escritorio-1-optimizado.jpg" alt="" width="394" height="162" />
+                <div class="textos-noticia">
+                    <h6>Semana de la Cocina Italiana en L’adesso Ristorante</h6>
+                    <p>L´adesso celebra la Semana de la Cocina Italiana con un menú especial realizado con platos
+                        típicos de
+                        la cocina italiana</p>
+                </div>
+                <div class="flecha-noticias">
+                    <a href="#">
+                        <h4>→</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="linea-noticias"></div>
+            <div class="noticia">
+                <img src="img/img/noticias-escritorio-2-optimizado.jpg" alt="" width="394" height="162" />
+                <div class="textos-noticia">
+                    <h6>Nuevos sabores en la carta de Otoño de L’adesso Ristorante</h6>
+                    <p>El chef Leonardo Fumarola presenta una nueva carta con platos italianos ideales para deleitarse durante los días frescos.</p>
+                </div>
+                <div class="flecha-noticias">
+                    <a href="#">
+                        <h4>→</h4>
+                    </a>
+                </div>
+            </div>
+        </article>
+
+    </main>
     <footer>
         <ul>
             <li>
-                <img src="img/svg/instagram.svg" alt="" width="40" height="40" />
-                <p>Instagram</p>
+                <a href="https://www.instagram.com/poneteeldelantal/" target="_blank">
+                    <img src="img/svg/instagram.svg" alt="" width="40" height="40" />
+                    <p>Instagram</p>
+                </a>
             </li>
             <li>
+                <a href="https://www.facebook.com/Poneteeldelantal?ref=hl" target="_blank">
                 <img src="img/svg/facebook.svg" alt="" width="40" height="40" />
                 <p>Facebook</p>
+                </a>
             </li>
             <li>
+                <a href="https://www.youtube.com/channel/UCe3dXQ7yRv0x3CNFf5MmcQw" target="_blank">
                 <img src="img/svg/youtube.svg" alt="" width="40" height="40" />
                 <p>Youtube</p>
+                </a>
             </li>
             <li>
+                <a href="https://www.tiktok.com/@agusmaral?is_from_webapp=1&sender_device=pc" target="_blank">
                 <img src="img/svg/tiktok.svg" alt="" width="40" height="40" />
                 <p>Tiktok</p>
+                </a>
             </li>
         </ul>
         <p>Derechos reservados© 2026</p>
