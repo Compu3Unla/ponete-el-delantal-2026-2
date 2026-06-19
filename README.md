@@ -1,4 +1,4 @@
-**Grupo 2 - Ponete el Delantal**
+#**Grupo 2 - Ponete el Delantal**
 
 *Integrantes: María Luján Leiva, Noelia Argüello, Alejandra Agüero, Gianluca Petrosino*
 
