@@ -11,21 +11,21 @@
 @font-face {
     font-family: "lobstertwo italic";
     src: url(font/lobstertwo-italic.ttf) format(truetype);
-    font-weigth: italic;
+    font-weight:italic;
     font-style: italic;
 }
 
 @font-face {
     font-family: "lobstertwo bold";
     src: url(font/lobstertwo-bold.ttf) format(truetype);
-    font-weigth: bold;
+    font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: "estedad regular";
     src: url(font/Estedad-Regular.ttf) format(truetype);
-    font-weigth: normal;
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -710,6 +710,7 @@ button {
     flex-direction: row;
     gap: 20px;
 }
+/* termina css de contacto.html */
 
 /* css de Sobre Mí */
 
@@ -717,22 +718,47 @@ button {
 .presentacion p {
     color: var(--color-marron);
     max-width: 2650px;
-    text-align: center;
+    text-align: center;    
     padding: 20px 80px;
 }
 
 .galeria-sobremi img {
     border-radius: 29px;
+    max-width: 100%;
+    height: auto;
 }
 
 .galeria-sobremi {
     display: flex;
-    height: 514px;
+    flex-wrap: wrap;
     padding: 45px 0 22px 0;
     justify-content: center;
-    align-items: flex-start;
-    gap: 108px;
-    align-self: stretch;
+    gap: 20px;
+}
+
+.personal,
+.justificacion {
+    display: flex;
+    flex: 1 1 45%;
+    padding: 20px 80px;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.personal p, .personal h4 {
+    color: var(--color-marron);
+}
+
+.justificacion p, .justificacion h4 {
+    color: var(--color-marron);
+}
+
+.menu-desplegable {
+    display: flex;
+    padding: 20px 80px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
 }
 
 summary {
@@ -744,7 +770,6 @@ summary {
     max-width: 950px;
     padding: 20px;
     gap: 40px;
-    cursor: pointer;
 }
 
 details p {
@@ -755,6 +780,31 @@ details p {
     max-width: 950px;
 }
 
+.contenedor-ppal {
+    display: flex;
+    flex-wrap: wrap;       
+    gap: 50px;
+    padding: 50px 80px;
+    width: 100%;
+    justify-content: center; 
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1920px;
+}
+
+.contenedor-ppal .contenedor-secciones-sm {
+    flex: 1;
+    max-width: 1000px;
+}
+
+.contenedor-ppal .justificacion {
+    flex: 1;
+    padding: 0;
+    max-width: 1000px;
+}
+
+/* termina css de Sobre mí */
+
 /*comienzo css recetario*/
 .receta {
     width: 100%;
@@ -763,7 +813,6 @@ details p {
     padding: 20px 90px 80px;
 }
 
-
 main {
     width: 100%;
 }
@@ -771,12 +820,6 @@ main {
 .titular {
     display: flex;
     justify-content: center;
-}
-
-.categorias {
-    width: 100%;
-    padding: 0;
-    margin-bottom: 40px;
 }
 
 .contenido-receta {
@@ -851,7 +894,6 @@ main {
 }
 
 .pasos p {
-
     font-family: "estedad regular", sans-serif;
     font-size: 1rem;
     line-height: 1.6;
@@ -976,35 +1018,6 @@ h2 {
     transition: background-color .2s ease;
 }
 
-.categorias a {
-    color: white;
-
-    font-size: 1rem;
-
-    white-space: nowrap;
-}
-
-.categorias ul {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-    background-color: var(--color-verde);
-
-    padding: 20px 0;
-
-    margin: 0;
-}
-
-.categorias li {
-    flex: 1;
-    text-align: center;
-}
-
-h2 {
-    padding: 30px;
-}
 .submenu-recetario li:hover {
     background-color: rgba(255, 255, 255, 0.15);
 }
@@ -1028,7 +1041,7 @@ main {
 
 .columna-izquierda,
 .notas {
-     width: 100%;
+    width: 100%;
 }
 
 .columna-izquierda img {
@@ -1054,27 +1067,11 @@ header {
     padding: 20px;
 }
 
- header>a,
+header>a,
 .buscador {
     margin: 0;
 }
 
-summary {
-    padding: 10px;
-}
-
-details p {
-    padding: 10px;
-}
-
-.personal,
-.justificacion {
-    padding: 15px;
-}
-
-.menu-desplegable {
-    padding: 15px;
-}
 .botonera {
     width: 100%;
     display: flex;
@@ -1187,5 +1184,34 @@ footer li img {
 footer li p {
     font-size: 0.8rem;
     text-align: center;
+}
+
+summary {
+    padding: 10px;
+}
+
+details p {
+    padding: 10px;
+}
+.personal,
+.justificacion {
+    padding: 15px;
+}
+
+.menu-desplegable {
+    padding: 15px;
+}
+}
+
+@media screen and (max-width: 1600px) {
+
+.contenedor-ppal {
+    flex-direction: column;
+}
+
+.contenedor-ppal .contenedor-secciones-sm,
+.contenedor-ppal .justificacion {
+    width: 100%;
+    flex: none;
 }
 }
